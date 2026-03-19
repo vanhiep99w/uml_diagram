@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "currentState": "CODE",
+  "feature": {
+    "name": "UML Chart AI Website",
+    "slug": "uml-chart-ai-website",
+    "description": "A website that allows users to create UML diagrams and charts using AI assistance"
+  },
+  "mode": "research",
+  "startedAt": "2026-03-19",
+  "completedStates": ["RESEARCH", "SPEC", "BEADS"],
+  "failedAttempts": 0,
+  "beadsEpic": "demo_final-3y5",
+  "doltRemote": "https://doltremoteapi.dolthub.com/congcp/landingpage",
+  "worktree": null,
+  "prNumber": null,
+  "lastError": null
+}
