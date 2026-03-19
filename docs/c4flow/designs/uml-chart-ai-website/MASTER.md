@@ -89,6 +89,22 @@
 | Library | `Ntk8Z` | ✅ Complete |
 | Settings | `EVdcV` | ✅ Complete |
 
+## Beads Mapping
+
+Epic: **`uml_diagram-psf`** — UML Chart AI Website
+
+| Bead ID | Task | Design Screen(s) | Components Used |
+|---------|------|-------------------|-----------------|
+| `uml_diagram-psf.1` | Project Setup, Prisma Schema & DB Migration | — | — (infra only) |
+| `uml_diagram-psf.2` | Auth Service: Register, Login & Session | Login (`qXIfm`), Register (`vXPxo`), Forgot Password (`EWgZZ`) | Input/Default, Button/Primary, Button/Ghost |
+| `uml_diagram-psf.3` | AI Service: Generate, Refine & Test-Connection APIs | Editor (`jMCqg`) — AI Chat Panel | ChatBubble/User, ChatBubble/AI |
+| `uml_diagram-psf.4` | Diagram Service: CRUD API Routes | Library (`Ntk8Z`) | DiagramCard |
+| `uml_diagram-psf.5` | Settings/Provider Config API | Settings (`EVdcV`) — AI Provider section | Input/Default, Badge/Success, Button/Primary, Button/Secondary |
+| `uml_diagram-psf.6` | Editor Page: Monaco + Diagram Renderer + AI Panel | Editor (`jMCqg`) | Select/Default, ChatBubble/*, Button/Primary, Button/Secondary, TopBar, Toast/* |
+| `uml_diagram-psf.7` | Diagram Library UI | Library (`Ntk8Z`) | DiagramCard, EmptyState, Select/Default, Badge/Default, Button/Primary |
+| `uml_diagram-psf.8` | Settings UI: AI Provider Config & Profile | Settings (`EVdcV`) | Input/Default, Button/Primary, Button/Secondary, Badge/Success, Toast/* |
+| `uml_diagram-psf.9` | Diagram Export: PNG & SVG Download | Editor (`jMCqg`) — Export button | Button/Primary |
+
 ## File
 
 - Pencil file: `docs/c4flow/designs/uml-chart-ai-website/uml-chart-ai-website.pen`
