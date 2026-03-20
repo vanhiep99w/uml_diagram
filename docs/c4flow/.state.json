@@ -42,15 +42,15 @@
     "githubSecretsConfigured": true
   },
   "taskLoop": {
-    "currentTaskId": null,
-    "currentTaskSlug": null,
-    "currentBranch": null,
-    "subState": null,
+    "currentTaskId": "uml_diagram-psf.10",
+    "currentTaskSlug": "test",
+    "currentBranch": "feat/uml_diagram-psf.10-test",
+    "subState": "CODING",
     "completedTasks": [
       {
         "id": "uml_diagram-psf.1",
         "pr": 1,
-        "mergedAt": "2026-03-20T10:28:38Z"
+        "mergedAt": "2026-03-20T10:15:00Z"
       }
     ],
     "failedTasks": []
