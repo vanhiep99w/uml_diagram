@@ -17,7 +17,7 @@
   "beadsEpic": "uml_diagram-psf",
   "doltRemote": "https://doltremoteapi.dolthub.com/c4_tunn/uml_diagram",
   "worktree": null,
-  "prNumber": null,
+  "prNumber": 1,
   "lastError": null,
   "heroScreen": "jMCqg",
   "designSystem": "docs/c4flow/designs/uml-chart-ai-website/uml-chart-ai-website.pen",
@@ -42,11 +42,17 @@
     "githubSecretsConfigured": true
   },
   "taskLoop": {
-    "currentTaskId": "uml_diagram-psf.1",
-    "currentTaskSlug": "project-setup-prisma-schema-db-migration",
-    "currentBranch": "feat/uml_diagram-psf.1-project-setup-prisma-schema-db-migration",
-    "subState": "CODING",
-    "completedTasks": [],
+    "currentTaskId": null,
+    "currentTaskSlug": null,
+    "currentBranch": null,
+    "subState": null,
+    "completedTasks": [
+      {
+        "id": "uml_diagram-psf.1",
+        "pr": 1,
+        "mergedAt": "2026-03-20T10:28:38Z"
+      }
+    ],
     "failedTasks": []
   }
 }
