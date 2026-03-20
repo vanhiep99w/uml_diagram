@@ -33,6 +33,7 @@ model UserSettings {
   userId           String   @unique
   encryptedApiKey  String?  // AES-256 encrypted OpenAI API key
   preferredModel   String   @default("gpt-4")
+  apiBaseUrl       String?  // OpenAI-compatible provider base URL
   theme            String   @default("light")
   createdAt        DateTime @default(now())
   updatedAt        DateTime @updatedAt
