@@ -43,10 +43,10 @@
     "githubSecretsConfigured": true
   },
   "taskLoop": {
-    "currentTaskId": "uml_diagram-psf.2",
-    "currentTaskSlug": "auth-service-register-login-session",
-    "currentBranch": "feat/uml_diagram-psf.2-auth-service-register-login-session",
-    "subState": "CLOSING",
+    "currentTaskId": "uml_diagram-psf.3",
+    "currentTaskSlug": "ai-service-generate-refine-test-connection-apis",
+    "currentBranch": "feat/uml_diagram-psf.3-ai-service-generate-refine-test-connection-apis",
+    "subState": "REVIEWING",
     "completedTasks": [
       {
         "id": "uml_diagram-psf.1",
