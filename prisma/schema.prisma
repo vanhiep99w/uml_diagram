@@ -1,0 +1,58 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// NOTE: relationMode="prisma" is required for Dolt (MySQL fork) compatibility.
+// Dolt has limited foreign key support. This means referential integrity is
+// enforced by Prisma only — raw SQL queries or direct DB access bypass this.
+// Team must ensure all DB operations go through Prisma client.
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+  // Dolt has lower max_connections, so limit the connection pool
+  relationMode = "prisma"
+}
+
+model User {
+  id        String    @id @default(cuid())
+  email     String    @unique
+  name      String?
+  password  String    // bcrypt hashed
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  diagrams  Diagram[]
+  settings  UserSettings?
+}
+
+model UserSettings {
+  id               String   @id @default(cuid())
+  userId           String   @unique
+  encryptedApiKey  String?  // AES-256 encrypted OpenAI API key
+  preferredModel   String   @default("gpt-4")
+  theme            String   @default("light")
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model Diagram {
+  id          String   @id @default(cuid())
+  userId      String
+  title       String
+  content     String   @db.Text // mermaid syntax
+  diagramType String   @default("flowchart")
+  isPublic    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
