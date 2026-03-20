@@ -29,7 +29,8 @@
           "<rootDir>/__tests__/smoke/**/*.test.ts",
           "<rootDir>/__tests__/auth/**/*.test.ts",
           "<rootDir>/__tests__/editor/plantuml-route.test.ts",
-          "<rootDir>/__tests__/editor/mock-api.test.ts"
+          "<rootDir>/__tests__/editor/mock-api.test.ts",
+          "<rootDir>/__tests__/library/mock-diagrams.test.ts"
         ],
         "moduleNameMapper": {
           "^@/(.*)$": "<rootDir>/src/$1"
@@ -45,7 +46,10 @@
         "testMatch": [
           "<rootDir>/__tests__/editor/DiagramTypeSelector.test.tsx",
           "<rootDir>/__tests__/editor/AiGeneratePanel.test.tsx",
-          "<rootDir>/__tests__/editor/DiagramPreview.test.tsx"
+          "<rootDir>/__tests__/editor/DiagramPreview.test.tsx",
+          "<rootDir>/__tests__/library/DiagramCard.test.tsx",
+          "<rootDir>/__tests__/library/SaveDiagramModal.test.tsx",
+          "<rootDir>/__tests__/library/RenameModal.test.tsx"
         ],
         "moduleNameMapper": {
           "^@/(.*)$": "<rootDir>/src/$1"
