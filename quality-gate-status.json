@@ -1,0 +1,37 @@
+{
+  "schema_version": "1",
+  "generated_at": "2026-03-20T10:54:04Z",
+  "expires_at": "2026-03-20T11:54:04Z",
+  "gate_id": "uml_diagram-fnf",
+  "overall_pass": false,
+  "checks": {
+    "codex_review": {
+      "pass": true,
+      "ran_at": "2026-03-20T10:54:04Z",
+      "critical_count": 0,
+      "high_count": 0,
+      "medium_count": 1,
+      "low_count": 1,
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "file": "src/app/api/auth/register/route.ts",
+          "line": 7,
+          "message": "In-memory rateLimitMap never pruned — expired entries accumulate until process restart."
+        },
+        {
+          "severity": "LOW",
+          "file": "src/app/(auth)/login/page.tsx",
+          "line": 28,
+          "message": "Login page ignores callbackUrl query param set by middleware, always redirects to /dashboard."
+        }
+      ],
+      "summary": "All HIGH issues resolved. 1 MEDIUM (memory leak in rate-limit map) and 1 LOW remain — neither blocks merge."
+    },
+    "bd_preflight": {
+      "pass": null,
+      "ran_at": null,
+      "issues": []
+    }
+  }
+}

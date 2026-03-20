@@ -27,12 +27,16 @@
         "testMatch": [
           "<rootDir>/__tests__/setup/**/*.test.ts",
           "<rootDir>/__tests__/smoke/**/*.test.ts",
+          "<rootDir>/__tests__/auth/**/*.test.ts",
           "<rootDir>/__tests__/editor/plantuml-route.test.ts",
           "<rootDir>/__tests__/editor/mock-api.test.ts"
         ],
         "moduleNameMapper": {
           "^@/(.*)$": "<rootDir>/src/$1"
-        }
+        },
+        "setupFiles": [
+          "<rootDir>/jest.env.ts"
+        ]
       },
       {
         "displayName": "jsdom",
