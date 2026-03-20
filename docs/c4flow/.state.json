@@ -11,13 +11,14 @@
   "completedStates": [
     "RESEARCH",
     "SPEC",
-    "BEADS"
+    "BEADS",
+    "PR"
   ],
   "failedAttempts": 0,
   "beadsEpic": "uml_diagram-psf",
   "doltRemote": "https://doltremoteapi.dolthub.com/c4_tunn/uml_diagram",
   "worktree": null,
-  "prNumber": 1,
+  "prNumber": 4,
   "lastError": null,
   "heroScreen": "jMCqg",
   "designSystem": "docs/c4flow/designs/uml-chart-ai-website/uml-chart-ai-website.pen",
