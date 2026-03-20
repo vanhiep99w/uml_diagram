@@ -43,10 +43,10 @@
     "githubSecretsConfigured": true
   },
   "taskLoop": {
-    "currentTaskId": null,
-    "currentTaskSlug": null,
-    "currentBranch": null,
-    "subState": null,
+    "currentTaskId": "uml_diagram-psf.5",
+    "currentTaskSlug": "settings-provider-config-api",
+    "currentBranch": "feat/uml_diagram-psf.5-settings-provider-config-api",
+    "subState": "REVIEWING",
     "completedTasks": [
       {
         "id": "uml_diagram-psf.1",

@@ -1,38 +1,32 @@
 {
   "schema_version": "1",
-  "generated_at": "2026-03-20T14:00:54Z",
-  "expires_at": "2026-03-20T15:00:54Z",
+  "generated_at": "2026-03-20T14:31:27Z",
+  "expires_at": "2026-03-20T15:31:27Z",
   "gate_id": "uml_diagram-fnf",
   "overall_pass": false,
   "checks": {
     "codex_review": {
       "pass": true,
-      "ran_at": "2026-03-20T14:00:54Z",
+      "ran_at": "2026-03-20T14:31:27Z",
       "critical_count": 0,
       "high_count": 0,
-      "medium_count": 2,
-      "low_count": 1,
+      "medium_count": 0,
+      "low_count": 2,
       "findings": [
         {
-          "severity": "MEDIUM",
-          "file": "src/app/api/ai/generate/route.ts",
-          "line": 19,
-          "message": "No per-user rate limiting on AI endpoints — expensive AI calls could be abused."
-        },
-        {
-          "severity": "MEDIUM",
-          "file": "src/app/api/ai/refine/route.ts",
-          "line": 19,
-          "message": "Same missing rate limiting as generate endpoint."
+          "severity": "LOW",
+          "file": "src/lib/settings-service.ts",
+          "line": 63,
+          "message": "decryptApiKey errors now caught gracefully — wrapped in try/catch."
         },
         {
           "severity": "LOW",
-          "file": "src/lib/ai-service.ts",
-          "line": 33,
-          "message": "InvalidUmlOutputError embeds up to 100 chars of raw AI response in message — safe today but fragile."
+          "file": "prisma.config.ts",
+          "line": 5,
+          "message": "earlyAccess: true — no documentation on why this is needed."
         }
       ],
-      "summary": "All HIGH issues resolved. SSRF blocklist covers RFC-1918, link-local, cloud metadata, 0.0.0.0, IPv6 loopback and ULA. 2 MEDIUM (no AI endpoint rate limiting), 1 LOW remain."
+      "summary": "All MEDIUM issues resolved: HTTPS-only URL validation, max lengths, maskApiKey edge case, rate limiting on PUT, decryptApiKey error handling."
     },
     "bd_preflight": {
       "pass": null,

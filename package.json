@@ -31,10 +31,12 @@
           "<rootDir>/__tests__/editor/plantuml-route.test.ts",
           "<rootDir>/__tests__/editor/mock-api.test.ts",
           "<rootDir>/__tests__/library/mock-diagrams.test.ts",
-          "<rootDir>/__tests__/ai/**/*.test.ts"
+          "<rootDir>/__tests__/ai/**/*.test.ts",
+          "<rootDir>/__tests__/settings/**/*.test.ts"
         ],
         "moduleNameMapper": {
-          "^@/(.*)$": "<rootDir>/src/$1"
+          "^@/(.*)$": "<rootDir>/src/$1",
+          "^@prisma/client$": "<rootDir>/__mocks__/prisma-client-stub.ts"
         },
         "setupFiles": [
           "<rootDir>/jest.env.ts"
