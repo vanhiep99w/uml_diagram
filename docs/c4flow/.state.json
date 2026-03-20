@@ -42,10 +42,10 @@
     "githubSecretsConfigured": true
   },
   "taskLoop": {
-    "currentTaskId": "uml_diagram-psf.6",
-    "currentTaskSlug": "editor-page-monaco-diagram-renderer-ai-panel",
-    "currentBranch": "feat/uml_diagram-psf.6-editor-page-monaco-diagram-renderer-ai-panel",
-    "subState": "CODING",
+    "currentTaskId": null,
+    "currentTaskSlug": null,
+    "currentBranch": null,
+    "subState": null,
     "completedTasks": [
       {
         "id": "uml_diagram-psf.1",
@@ -56,6 +56,11 @@
         "id": "uml_diagram-psf.10",
         "pr": 2,
         "mergedAt": "2026-03-20T10:35:31Z"
+      },
+      {
+        "id": "uml_diagram-psf.6",
+        "pr": 3,
+        "mergedAt": "2026-03-20T10:55:02Z"
       }
     ],
     "failedTasks": []
