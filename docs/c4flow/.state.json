@@ -42,10 +42,10 @@
     "githubSecretsConfigured": true
   },
   "taskLoop": {
-    "currentTaskId": null,
-    "currentTaskSlug": null,
-    "currentBranch": null,
-    "subState": null,
+    "currentTaskId": "uml_diagram-psf.7",
+    "currentTaskSlug": "diagram-library-ui",
+    "currentBranch": "feat/uml_diagram-psf.7-diagram-library-ui",
+    "subState": "CODING",
     "completedTasks": [
       {
         "id": "uml_diagram-psf.1",
