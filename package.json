@@ -18,7 +18,10 @@
     ],
     "moduleNameMapper": {
       "^@/(.*)$": "<rootDir>/src/$1"
-    }
+    },
+    "setupFiles": [
+      "<rootDir>/jest.setup.ts"
+    ]
   },
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",

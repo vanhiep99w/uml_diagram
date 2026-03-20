@@ -42,10 +42,10 @@
     "githubSecretsConfigured": true
   },
   "taskLoop": {
-    "currentTaskId": null,
-    "currentTaskSlug": null,
-    "currentBranch": null,
-    "subState": null,
+    "currentTaskId": "uml_diagram-psf.2",
+    "currentTaskSlug": "auth-service-register-login-session",
+    "currentBranch": "feat/uml_diagram-psf.2-auth-service-register-login-session",
+    "subState": "CODING",
     "completedTasks": [
       {
         "id": "uml_diagram-psf.1",
