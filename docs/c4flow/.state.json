@@ -11,13 +11,14 @@
   "completedStates": [
     "RESEARCH",
     "SPEC",
-    "BEADS"
+    "BEADS",
+    "PR"
   ],
   "failedAttempts": 0,
   "beadsEpic": "uml_diagram-psf",
   "doltRemote": "https://doltremoteapi.dolthub.com/c4_tunn/uml_diagram",
   "worktree": null,
-  "prNumber": 1,
+  "prNumber": 4,
   "lastError": null,
   "heroScreen": "jMCqg",
   "designSystem": "docs/c4flow/designs/uml-chart-ai-website/uml-chart-ai-website.pen",
@@ -42,10 +43,10 @@
     "githubSecretsConfigured": true
   },
   "taskLoop": {
-    "currentTaskId": "uml_diagram-psf.7",
-    "currentTaskSlug": "diagram-library-ui",
-    "currentBranch": "feat/uml_diagram-psf.7-diagram-library-ui",
-    "subState": "CODING",
+    "currentTaskId": "uml_diagram-psf.2",
+    "currentTaskSlug": "auth-service-register-login-session",
+    "currentBranch": "feat/uml_diagram-psf.2-auth-service-register-login-session",
+    "subState": "CLOSING",
     "completedTasks": [
       {
         "id": "uml_diagram-psf.1",
