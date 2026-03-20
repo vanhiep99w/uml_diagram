@@ -43,10 +43,10 @@
     "githubSecretsConfigured": true
   },
   "taskLoop": {
-    "currentTaskId": "uml_diagram-psf.5",
-    "currentTaskSlug": "settings-provider-config-api",
-    "currentBranch": "feat/uml_diagram-psf.5-settings-provider-config-api",
-    "subState": "REVIEWING",
+    "currentTaskId": null,
+    "currentTaskSlug": null,
+    "currentBranch": null,
+    "subState": null,
     "completedTasks": [
       {
         "id": "uml_diagram-psf.1",
@@ -67,6 +67,11 @@
         "id": "uml_diagram-psf.3",
         "pr": 6,
         "mergedAt": "2026-03-20T14:02:57Z"
+      },
+      {
+        "id": "uml_diagram-psf.5",
+        "pr": 7,
+        "mergedAt": "2026-03-20T14:32:47Z"
       }
     ],
     "failedTasks": []
