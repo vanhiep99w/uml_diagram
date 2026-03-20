@@ -1,32 +1,38 @@
 {
   "schema_version": "1",
-  "generated_at": "2026-03-20T10:54:04Z",
-  "expires_at": "2026-03-20T11:54:04Z",
+  "generated_at": "2026-03-20T14:00:54Z",
+  "expires_at": "2026-03-20T15:00:54Z",
   "gate_id": "uml_diagram-fnf",
   "overall_pass": false,
   "checks": {
     "codex_review": {
       "pass": true,
-      "ran_at": "2026-03-20T10:54:04Z",
+      "ran_at": "2026-03-20T14:00:54Z",
       "critical_count": 0,
       "high_count": 0,
-      "medium_count": 1,
+      "medium_count": 2,
       "low_count": 1,
       "findings": [
         {
           "severity": "MEDIUM",
-          "file": "src/app/api/auth/register/route.ts",
-          "line": 7,
-          "message": "In-memory rateLimitMap never pruned — expired entries accumulate until process restart."
+          "file": "src/app/api/ai/generate/route.ts",
+          "line": 19,
+          "message": "No per-user rate limiting on AI endpoints — expensive AI calls could be abused."
+        },
+        {
+          "severity": "MEDIUM",
+          "file": "src/app/api/ai/refine/route.ts",
+          "line": 19,
+          "message": "Same missing rate limiting as generate endpoint."
         },
         {
           "severity": "LOW",
-          "file": "src/app/(auth)/login/page.tsx",
-          "line": 28,
-          "message": "Login page ignores callbackUrl query param set by middleware, always redirects to /dashboard."
+          "file": "src/lib/ai-service.ts",
+          "line": 33,
+          "message": "InvalidUmlOutputError embeds up to 100 chars of raw AI response in message — safe today but fragile."
         }
       ],
-      "summary": "All HIGH issues resolved. 1 MEDIUM (memory leak in rate-limit map) and 1 LOW remain — neither blocks merge."
+      "summary": "All HIGH issues resolved. SSRF blocklist covers RFC-1918, link-local, cloud metadata, 0.0.0.0, IPv6 loopback and ULA. 2 MEDIUM (no AI endpoint rate limiting), 1 LOW remain."
     },
     "bd_preflight": {
       "pass": null,

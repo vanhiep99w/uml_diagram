@@ -30,7 +30,8 @@
           "<rootDir>/__tests__/auth/**/*.test.ts",
           "<rootDir>/__tests__/editor/plantuml-route.test.ts",
           "<rootDir>/__tests__/editor/mock-api.test.ts",
-          "<rootDir>/__tests__/library/mock-diagrams.test.ts"
+          "<rootDir>/__tests__/library/mock-diagrams.test.ts",
+          "<rootDir>/__tests__/ai/**/*.test.ts"
         ],
         "moduleNameMapper": {
           "^@/(.*)$": "<rootDir>/src/$1"
