@@ -26,6 +26,8 @@ jobs:
           timeout: 300s
           script: |
             set -euo pipefail
+            # Install git if not present (Amazon Linux 2023)
+            which git || sudo dnf install -y git
             # Pull latest code
             if [ -d ~/app ]; then
               cd ~/app && git fetch origin main && git reset --hard origin/main
