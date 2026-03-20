@@ -42,10 +42,10 @@
     "githubSecretsConfigured": true
   },
   "taskLoop": {
-    "currentTaskId": null,
-    "currentTaskSlug": null,
-    "currentBranch": null,
-    "subState": null,
+    "currentTaskId": "uml_diagram-psf.6",
+    "currentTaskSlug": "editor-page-monaco-diagram-renderer-ai-panel",
+    "currentBranch": "feat/uml_diagram-psf.6-editor-page-monaco-diagram-renderer-ai-panel",
+    "subState": "CODING",
     "completedTasks": [
       {
         "id": "uml_diagram-psf.1",
