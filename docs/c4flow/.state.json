@@ -30,17 +30,8 @@
     "sshCidr": "27.72.100.51/32",
     "certbotEmail": "nguyentu.uet@gmail.com",
     "domain": "c4vibe.codes",
-    "cloudflareZoneId": "9ae8d314ba1d56a1144ba9b35486fcfa"
-  },
-  "infraState": {
-    "appliedAt": "2026-03-20T07:20:50Z",
-    "ec2Host": "3.219.131.61",
-    "fqdn": "uml-chart-ai-website.c4vibe.codes",
-    "appPort": 3000,
-    "tfDir": "docs/c4flow/terraform/uml-chart-ai-website",
-    "nginxConfigured": true,
-    "sslConfigured": false,
-    "githubSecretsConfigured": true
+    "cloudflareZoneId": "9ae8d314ba1d56a1144ba9b35486fcfa",
+    "destroyedAt": "2026-03-22T02:51:55Z"
   },
   "taskLoop": {
     "currentTaskId": null,
